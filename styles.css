@@ -3,18 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: 100%;
+}
 
 body {
   background-color: #eee;
   font-family: 'Lato', sans-serif;
 }
 
-#page-margin{
-  margin: 0 10px 0 10px;
-}
-#page-wrapper {
-  position: relative;
-  
+#page-margin {
+  margin: 0 10px;
 }
 
 li {
@@ -26,37 +25,24 @@ a {
   text-decoration: none;
 }
 
-/** global classes styling **/
-
 .container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  }
+}
 
-.btn {
-
+.btn, .btn-1 {
   height: 40px;
   font-size: 1em;
   font-weight: 900;
   text-transform: uppercase;
-  border: 3px black solid;
+  border: 3px solid black;
   border-radius: 2px;
   background: transparent;
   cursor: pointer;
-
 }
 
 .btn-1 {
-
-  height: 40px;
-  font-size: 1em;
-  font-weight: 900;
-  text-transform: uppercase;
-  border: 3px black solid;
-  border-radius: 2px;
-  background: transparent;
-  cursor: pointer;
   padding: 0 20px;
 }
 
@@ -68,7 +54,7 @@ header {
   position: fixed;
   top: 0;
   min-height: 75px;
-  padding: 0px 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -85,9 +71,7 @@ header {
 .logo {
   width: 60vw;
   margin-top: 15px;
-
 }
-
 
 .logo > img {
   width: 100%;
@@ -98,7 +82,6 @@ header {
   align-items: center;
   text-align: center;
   margin-left: 20px;
-  
 }
 
 @media (max-width: 650px) {
@@ -141,7 +124,7 @@ nav > ul {
 
 #hero {
   display: flex;
-  position:relative;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -152,7 +135,6 @@ nav > ul {
 
 #hero > h2 {
   margin-bottom: 20px;
-  
 }
 
 #hero input[type='email'] {
@@ -168,7 +150,7 @@ nav > ul {
   height: 30px;
   margin: 15px 0;
   border: 0;
-  background-color: #f1c40f;
+  background-color: #ffcc00;
 }
 
 #hero input[type='submit']:hover {
@@ -182,8 +164,6 @@ nav > ul {
   }
 }
 
-
-
 #video1 {
   margin-top: 50px;
   display: flex;
@@ -191,7 +171,7 @@ nav > ul {
 }
 
 #video1 > iframe {
-  max-width: 560px;
+max-width: 560px;
   width: 100%;
 }
 
@@ -200,6 +180,9 @@ nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.product > h2 {
+  font-size: 4rem;
 }
 
 .product {
@@ -222,7 +205,7 @@ nav > ul {
   font-weight: 700;
 }
 
-.product > h2 {
+.product > del {
   margin-top: 15px;
 }
 
